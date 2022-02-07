@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%spark.sql\nselect * from test1",
-      "user": "admin",
-      "dateUpdated": "2022-02-07 14:26:51.836",
+      "text": "%spark.sql\nselect * from test12",
+      "user": "anonymous",
+      "dateUpdated": "2022-02-07 14:41:43.341",
       "progress": 0,
       "config": {
         "editorSetting": {
