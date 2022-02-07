@@ -1,0 +1,409 @@
+{
+  "paragraphs": [
+    {
+      "text": "%pyspark\nparam1 \u003d z.input(\"param_1\")\nparam2 \u003d z.input(\"param_2\")\nparam2 \u003d z.input(\"param_3\")\nz.put(\"key\",\"GSJG00001\")\nprint(a)\nprint(param1)\nprint(param2)",
+      "user": "admin",
+      "dateUpdated": "2022-01-29 10:44:46.214",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {
+          "param_1": "",
+          "param_2": "",
+          "param_3": ""
+        },
+        "forms": {
+          "param_1": {
+            "type": "TextBox",
+            "name": "param_1",
+            "displayName": "param_1",
+            "defaultValue": "",
+            "hidden": false
+          },
+          "param_2": {
+            "type": "TextBox",
+            "name": "param_2",
+            "displayName": "param_2",
+            "defaultValue": "",
+            "hidden": false
+          },
+          "param_3": {
+            "type": "TextBox",
+            "name": "param_3",
+            "displayName": "param_3",
+            "defaultValue": "",
+            "hidden": false
+          }
+        }
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "1\n\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642069385129_878428085",
+      "id": "paragraph_1642069385129_878428085",
+      "dateCreated": "2022-01-13 18:23:05.130",
+      "dateStarted": "2022-01-29 10:44:46.225",
+      "dateFinished": "2022-01-29 10:44:46.297",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\nz.put(\"a\",\"1\")\n",
+      "user": "admin",
+      "dateUpdated": "2022-01-27 15:07:50.504",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {
+          "a": ""
+        },
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641969940442_952713336",
+      "id": "paragraph_1641969940442_952713336",
+      "dateCreated": "2022-01-12 14:45:40.442",
+      "dateStarted": "2022-01-27 15:07:50.520",
+      "dateFinished": "2022-01-27 15:07:50.892",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\nvar a \u003d spark.sql(\"select * from poc.ods_yheast4_dgkh_fq\");\na.createOrReplaceTempView(\"temp1\");\n",
+      "user": "admin",
+      "dateUpdated": "2022-01-29 10:39:33.769",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34ma\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [khtybh: string, zzjgdm: string ... 47 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1643267107319_588711737",
+      "id": "paragraph_1643267107319_588711737",
+      "dateCreated": "2022-01-27 15:05:07.319",
+      "dateStarted": "2022-01-29 10:39:33.779",
+      "dateFinished": "2022-01-29 10:39:35.315",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark.sql(interpolate\u003dtrue)\n\nselect * from temp1 where nbjgh\u003d\u0027{key}\u0027; \n",
+      "user": "admin",
+      "dateUpdated": "2022-01-29 10:45:11.195",
+      "progress": 28,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "khtybh": "string",
+                      "zzjgdm": "string",
+                      "yxjgdm": "string",
+                      "jrxkzh": "string",
+                      "nbjgh": "string",
+                      "khmc": "string",
+                      "khywmc": "string",
+                      "frdb": "string",
+                      "frdbzjlb": "string",
+                      "frdbzjhm": "string",
+                      "cwry": "string",
+                      "cwryzjlb": "string",
+                      "cwryzjhm": "string",
+                      "jbckzh": "string",
+                      "jbzhkhxmc": "string",
+                      "zczb": "string",
+                      "zcdz": "string",
+                      "lxdh": "string",
+                      "yyzzh": "string",
+                      "yyzzyxjzrq": "string",
+                      "jyfw": "string",
+                      "clrq": "string",
+                      "ssxy": "string",
+                      "khlb": "string",
+                      "dkzh": "string",
+                      "gszh": "string",
+                      "dszh": "string",
+                      "mgskhtybh": "string",
+                      "tysxbz": "string",
+                      "sxed": "string",
+                      "yyed": "string",
+                      "ssgsbz": "string",
+                      "xydjbh": "string",
+                      "zczbbz": "string",
+                      "sszbbz": "string",
+                      "sszb": "string",
+                      "zzc": "string",
+                      "jzc": "string",
+                      "nsr": "string",
+                      "scjlxdgxny": "string",
+                      "czhm": "string",
+                      "ygrs": "string",
+                      "xzqhdm": "string",
+                      "khlx": "string",
+                      "fxyjxh": "string",
+                      "cjrq": "string",
+                      "area_no": "string",
+                      "org_no": "string",
+                      "load_date": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "khtybh": "string",
+                      "zzjgdm": "string",
+                      "yxjgdm": "string",
+                      "jrxkzh": "string",
+                      "nbjgh": "string",
+                      "khmc": "string",
+                      "khywmc": "string",
+                      "frdb": "string",
+                      "frdbzjlb": "string",
+                      "frdbzjhm": "string",
+                      "cwry": "string",
+                      "cwryzjlb": "string",
+                      "cwryzjhm": "string",
+                      "jbckzh": "string",
+                      "jbzhkhxmc": "string",
+                      "zczb": "string",
+                      "zcdz": "string",
+                      "lxdh": "string",
+                      "yyzzh": "string",
+                      "yyzzyxjzrq": "string",
+                      "jyfw": "string",
+                      "clrq": "string",
+                      "ssxy": "string",
+                      "khlb": "string",
+                      "dkzh": "string",
+                      "gszh": "string",
+                      "dszh": "string",
+                      "mgskhtybh": "string",
+                      "tysxbz": "string",
+                      "sxed": "string",
+                      "yyed": "string",
+                      "ssgsbz": "string",
+                      "xydjbh": "string",
+                      "zczbbz": "string",
+                      "sszbbz": "string",
+                      "sszb": "string",
+                      "zzc": "string",
+                      "jzc": "string",
+                      "nsr": "string",
+                      "scjlxdgxny": "string",
+                      "czhm": "string",
+                      "ygrs": "string",
+                      "xzqhdm": "string",
+                      "khlx": "string",
+                      "fxyjxh": "string",
+                      "cjrq": "string",
+                      "area_no": "string",
+                      "org_no": "string",
+                      "load_date": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "khtybh\tzzjgdm\tyxjgdm\tjrxkzh\tnbjgh\tkhmc\tkhywmc\tfrdb\tfrdbzjlb\tfrdbzjhm\tcwry\tcwryzjlb\tcwryzjhm\tjbckzh\tjbzhkhxmc\tzczb\tzcdz\tlxdh\tyyzzh\tyyzzyxjzrq\tjyfw\tclrq\tssxy\tkhlb\tdkzh\tgszh\tdszh\tmgskhtybh\ttysxbz\tsxed\tyyed\tssgsbz\txydjbh\tzczbbz\tsszbbz\tsszb\tzzc\tjzc\tnsr\tscjlxdgxny\tczhm\tygrs\txzqhdm\tkhlx\tfxyjxh\tcjrq\tarea_no\torg_no\tload_date\nA00001\t91110105327225914N\t313100000000\tB0001H111000001\tGSJG00001\t中润晟霖(北京)科技有限公司\tZRSLKJYXGS\t龚伟平\t居民身份证\t46d0930168afc267f4c206f97ea430cc\t吴桂珍\t居民身份证\te897a2814f4e5cc562783beb78ab3369\t6222022933128957123\t中国工商银行股份有限公司中关村支行\t1000000.00\t北京市门头沟区石龙工业开发区石龙经济开发区平安路1号1幢311\t010-61779779\t91110105327225914N\t20210623\t健康咨询（须经审批的诊疗活动除外）；健康管理（须经审批的诊疗活动除外）；经济贸易咨询；投资咨询；资产管理；餐饮管理；会议服务；承办展览展示活动；组织文化艺术交流活动（不含演出）；企业管理；设计、制作、代理、发布广告；技术推广服务；教育咨询（不含出国留学咨询及中介服务）。\t20150104\tA\t对公\t6222027431158716437\t110105327225913\t110105327225914\t\t是\t1000000.00\t500000.00\t是\tAAA\tCNY\tCNY\t300000.00\t1500000.00\t1000000.00\t500000.00\t201703\t010-61779779\t82\t110000\t单一法人客户\t语言应用能够注意.经营中文运行一直成为手机开始.设计投资项目.项目决定资源网上空间留言.或者完全发表操作部门.\t20191231\t110000\tB0001H111000001\t20191231\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://hadoop3:46084/jobs/job?id\u003d39"
+            },
+            {
+              "jobUrl": "http://hadoop3:46084/jobs/job?id\u003d40"
+            },
+            {
+              "jobUrl": "http://hadoop3:46084/jobs/job?id\u003d41"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641969949451_1535101251",
+      "id": "paragraph_1641969949451_1535101251",
+      "dateCreated": "2022-01-12 14:45:49.452",
+      "dateStarted": "2022-01-29 10:45:11.214",
+      "dateFinished": "2022-01-29 10:45:12.283",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark.sql\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-18 15:12:22.061",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642054422951_1986494793",
+      "id": "paragraph_1642054422951_1986494793",
+      "dateCreated": "2022-01-13 14:13:42.952",
+      "dateStarted": "2022-01-18 15:12:22.074",
+      "dateFinished": "2022-01-18 15:12:22.106",
+      "status": "FINISHED"
+    }
+  ],
+  "name": "全局变量",
+  "id": "2GUQFEFCM",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": true
+  },
+  "info": {}
+}
