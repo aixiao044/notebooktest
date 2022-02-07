@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%spark.pyspark\n\n# create DataFrame from python list. It can infer schema for you.\ndf1 \u003d spark.createDataFrame([(1, \"andy\", 20, \"USA\"), (2, \"jeff\", 23, \"China\"), (3, \"james\", 18, \"USA\")]).toDF(\"id\", \"name\", \"age\", \"country\")\ndf1.printSchema()\ndf1.show()\ndf1.show()\n",
-      "user": "admin",
-      "dateUpdated": "2022-02-07 14:01:14.890",
+      "text": "%spark.pyspark\n\n# create DataFrame from python list. It can infer schema for you.\ndf1 \u003d spark.createDataFrame([(1, \"andy\", 20, \"USA\"), (2, \"jeff\", 23, \"China\"), (3, \"james\", 18, \"USA\")]).toDF(\"id\", \"name\", \"age\", \"country\")\ndf1.printSchema()\ndf1.show()\ndf1.show()\ndf1.show()",
+      "user": "anonymous",
+      "dateUpdated": "2022-02-07 16:38:51.165",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
